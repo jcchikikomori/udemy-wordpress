@@ -10,14 +10,7 @@
 
   <title>Blog Home - Start Bootstrap Template</title>
 
-  <!-- Bootstrap core CSS -->
-  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-
   <?php wp_head();?>
-
-  <!-- Custom styles for this template -->
-  <!-- <link href="assets/css/blog-home.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
@@ -199,9 +192,7 @@
     <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <?php wp_footer(); ?>
 
 </body>
 
