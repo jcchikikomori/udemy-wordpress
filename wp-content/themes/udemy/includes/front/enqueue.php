@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Undocumented function
  *
@@ -26,11 +27,10 @@ function Ju_enqueue()
 
     // Now for javascript / footer stuffs
     $ju_bs_js = $BOOTSTRAP_JS . DIRECTORY_SEPARATOR . 'bootstrap.bundle.min.js';
-    $ju_jquery = $JQUERY_DIR . DIRECTORY_SEPARATOR . 'jquery.min.js';
     wp_register_script('ju_bootstrap', $ju_bs_js, array(), false, true);
-    wp_register_script('ju_jquery', $ju_jquery, array(), false, true);
+    wp_register_script('jquery', 'jquery-core', array(), false, true);
 
     // Enqueue all registered scripts
     wp_enqueue_script('ju_bootstrap');
-    wp_enqueue_script('ju_jquery');
+    wp_enqueue_script('jquery');
 }
